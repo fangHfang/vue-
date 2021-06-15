@@ -1,0 +1,177 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.banner-container {
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: $stickyFooterHeight;
+
+  .card-left {
+    flex: 0 0 350px;
+    height: 100%;
+    border-right: 1px solid $color-divideLine;
+
+    .img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  }
+
+  .card-right {
+    flex: 0 0 calc(100% - 350px);
+    height: 100%;
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding-bottom: 60px;
+
+    .card-title {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .card-block-wrap {
+      .card-block {
+        margin-top: 50px;
+        position: relative;
+      }
+
+      .banner-form {
+        padding: 15px;
+
+        .el-form-item {
+          margin-bottom: 10px;
+        }
+
+        .el-input {
+          height: 32px;
+          max-width: 400px;
+        }
+
+        .el-radio {
+          margin-bottom: 5px;
+        }
+
+        .upload-wrap {
+          justify-content: flex-start;
+
+          .banner-uploader {
+            margin-right: 20px;
+
+            ::v-deep.el-upload {
+              border: 1px dashed $color-input-or-border;
+              border-radius: $radius-4;
+              cursor: pointer;
+              position: relative;
+              width: 160px;
+              height: 80px;
+              line-height: 80px;
+
+              &:hover {
+                border-color: $color-fn-hover-or-checked-red;
+              }
+
+              .uploader-icon {
+                font-size: 28px;
+                color: $color-ps;
+                text-align: center;
+              }
+
+              .img {
+                width: 100%;
+                height: 100%;
+                vertical-align: top;
+              }
+
+              .el-icon-error {
+                position: absolute;
+                top: -10px;
+                right: -8px;
+                font-size: 18px;
+                color: $color-routine-or-minor;
+                background: $color-white;
+                border-radius: 50%;
+              }
+            }
+          }
+
+          .banner-link {
+            flex: 1;
+            color: $color-ps;
+          }
+        }
+      }
+
+      .card-block:first-child {
+        margin-top: 0;
+      }
+
+      .remove-btn {
+        position: absolute;
+        right: 20px;
+        top: 4px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .icon {
+          color: $color-brand;
+          font-weight: 600;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .form-plus {
+        text-align: center;
+        cursor: pointer;
+        padding-bottom: 100px;
+
+        .icon {
+          color: $color-brand;
+          font-weight: 600;
+          font-size: 20px;
+          padding: 5px 30px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .fixed-btn-box {
+      position: absolute;
+      bottom: 30px;
+      left: 370px;
+
+      .fixed-toolbar {
+        background: none;
+        border: none;
+      }
+
+      .fixed-toolbar > div {
+        width: 300px;
+      }
+
+      .fixed-toolbar > div .label {
+        width: 64px;
+        padding-left: 0;
+      }
+    }
+  }
+}
+.sort-box{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .sort{
+    margin:0px 10px 0 0;
+    padding:2px;
+    &+.sort{
+      margin-top:10px;
+    }
+  }
+}

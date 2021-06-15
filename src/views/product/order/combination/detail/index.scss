@@ -1,0 +1,109 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.del-form .el-form-item__label {
+  text-align: left;
+}
+
+.lage {
+  /deep/.el-upload.el-upload--picture-card {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.item-row {
+  flex-wrap: wrap;
+}
+
+.el-form-item {
+  width: calc((100% - 10px) / 4);
+}
+
+.del-form .item-row .el-form-item {
+  margin-right: unset;
+  ::v-deep .el-form-item__label{
+    font-weight: 600;
+  }
+}
+.spec-row{
+  width: calc(100% - 10px) !important;
+}
+.elFont {
+  display: flex;
+  align-items: center;
+}
+
+.elFont span:nth-child(1) {
+  margin-right: 10px;
+}
+
+.elFont span:nth-child(2) {
+  margin-right: 20px;
+}
+
+.elFont span:nth-child(3) {
+  margin-right: 30px;
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #52C41A;
+  margin-right: 6px;
+}
+
+.payInform .el-form-item__content {
+  text-align: right;
+  padding: 0 0 0 28px;
+  width: 100vh;
+}
+
+.actionbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select {
+  color: #ED6D00;
+}
+
+.select span {
+  margin-right: 5px;
+}
+
+.long-text{
+  white-space: normal;
+  word-break: break-all;
+  height: 40px;
+  line-height: 1.3;
+}
+
+.pay-form{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  ::v-deep .el-table{
+    flex:none;
+    width: 70%;
+  }
+}
+
+.pay-prompt{
+  padding: 15px 10px;
+  border: 1px solid;
+  margin-left: 15px;
+}
+
+::v-deep .i-status{
+  >div{
+    top:0;
+  }
+}

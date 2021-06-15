@@ -1,0 +1,75 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.del-form .item-row .item-textarea {
+  align-items: unset;
+  width: 100%;
+}
+
+.del-form .item-row:last-child .el-form-item {
+  width: 100%;
+}
+
+.r-i-l-t-add-btn {
+  margin-left: 15px;
+}
+
+.r-i-l-t-add > div .label {
+  width: 80px;
+}
+
+.r-i-l-t-add-page-content {
+  padding: 0;
+}
+
+.r-i-l-t-add-page-content .page-name {
+  padding: 20px;
+}
+
+.r-i-l-t-add-page-content .table-main {
+  padding: 0 15px;
+}
+
+.info-detail-input-box {
+  width: 100%;
+  display: flex;
+
+  /deep/.el-input .el-input__inner {
+    background: none;
+    border: none;
+    color: #000000;
+  }
+}
+
+.r-i-l-t-add-page-content .item-row {
+  padding: 0 15px 0 0;
+}
+
+.r-i-l-t-add-item-textarea {
+  color: #000000;
+  /deep/.el-form-item__content{
+    background: #f2f2f2;
+    padding:10px;
+    margin-right: 0;
+    img{
+      max-width:70%;
+      height:auto;
+    }
+  }
+}
+
+.r-i-l-t-add-table-main {
+  margin-top: 10px;
+}
+/deep/.el-form-item__content >span{
+  line-height: 20px;
+  display: inline-block;
+}
+.item-title{
+  padding-left: 20px;
+}
+.toolbar-box{
+  width: calc(100% - 30px);
+  margin: 0 15px;
+}
+.reason-textarea /deep/ .el-form-item__content {
+  padding: 0;
+}

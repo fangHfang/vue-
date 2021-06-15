@@ -1,0 +1,113 @@
+.a-start {
+  align-items: flex-start !important;
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  font-size: $font-size16;
+  color: $color-title-or-main;
+  margin-bottom: 30px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+
+  .detail-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .content-col {
+      position: relative;
+      font-size: $font-size14;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 30px;
+
+      >span:first-child {
+        color: $color-routine-or-minor;
+      }
+
+      >span:last-child {
+        color: $color-title-or-main;
+        margin-left: 20px;
+      }
+
+      .status-box {
+        /deep/.i-status div {
+          top: 0;
+        }
+      }
+
+      .view-store {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h4 {
+          font-size: $font-size14;
+          color: $color-brand;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+
+      .coupon-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+
+        >span {
+          color: $color-title-or-main;
+          margin-bottom: 20px;
+        }
+
+        >span:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .table{
+    width: 100%;
+  }
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+/* 地图相关 */
+.map{
+  width: 100%;
+  height: 280px;
+  margin-top: 30px;
+  .a-map {
+    width: 100%;
+    height: 100%;
+
+    ::v-deep .amap-logo,
+    ::v-deep .amap-copyright {
+      opacity: 0;
+    }
+  }
+}
+.pagination{
+  width: 100%;
+  /deep/ .el-pagination{
+    width: calc(100% - 55px);
+  }
+  /deep/ .el-pagination__jump{
+    margin-left: 0;
+  }
+}

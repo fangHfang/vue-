@@ -1,0 +1,27 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.dia-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dia-content > .el-input {
+  width: 150px;
+  height: 25px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.page {
+  position: relative;
+}
+
+.rule-button {
+  position: absolute;
+  top: 7px;
+  left: 330px;
+}
+
+.dialog {
+  margin-top: 150px;
+}

@@ -1,0 +1,57 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.link-box {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+
+  /deep/.el-icon-remove-outline {
+    height: 40px;
+    color: $color-brand;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-fn-hover-or-checked-red;
+    }
+  }
+}
+
+/deep/.el-icon-circle-plus-outline {
+  color: $color-brand;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  font-size: 24px;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-fn-hover-or-checked-red;
+  }
+}
+
+.del-form .item-row .label {
+  align-items: flex-start;
+}
+
+.del-form .item-row .label /deep/ .el-form-item__label {
+  height: 40px;
+  line-height: 40px;
+}
+
+.del-form .item-row .label .el-select {
+  margin-right: 20px;
+}
+
+.sign-mode {
+  padding: 12px 0;
+  border-bottom: 1px solid #EEEEEE;
+}

@@ -1,0 +1,19 @@
+.list-btn.checked{
+  background-color: $color-brand;
+  border-color:$color-brand;
+  color:#fff;
+}
+.list-btn{
+  border:1px solid #ddd;
+  cursor: pointer;
+  width:100px;
+  text-align: center;
+  margin-right:10px;
+  border-radius:4px;
+  transition: all .3s ease-in;
+  &:hover{
+    background-color: rgba(237,109,0,.05);
+    border:1px solid $color-brand;
+    color:$color-brand;
+  }
+}

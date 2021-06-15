@@ -1,0 +1,10 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+/deep/.img-load .el-upload--picture-card,
+.img-load .el-upload-list--picture-card .el-upload-list__item {
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+}
+.disabled  /deep/ .el-upload--picture-card {
+  display: none;
+}

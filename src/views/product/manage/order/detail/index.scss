@@ -1,0 +1,121 @@
+.a-start {
+  align-items: flex-start !important;
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  font-size: $font-size16;
+  color: $color-title-or-main;
+  margin-bottom: 30px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pay-prompt{
+  padding: 15px 10px;
+  border: 1px solid;
+  margin-left: 15px;
+}
+.flex-z{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  ::v-deep .el-table{
+    flex:none;
+    width: 72%;
+  }
+}
+.detail-item {
+  display: flex;
+  flex-direction: column;
+
+  .detail-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .content-col {
+      position: relative;
+      font-size: $font-size14;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 30px;
+
+      >span:first-child {
+        color: $color-routine-or-minor;
+      }
+
+      >span:last-child {
+        color: $color-title-or-main;
+        margin-left: 40px;
+        word-break: break-all;
+      }
+
+      .status-box {
+        /deep/.i-status div {
+          top: 0;
+        }
+      }
+
+      .view-store {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h4 {
+          font-size: $font-size14;
+          color: $color-brand;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+
+      .coupon-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+
+        >span {
+          color: $color-title-or-main;
+          margin-bottom: 20px;
+        }
+
+        >span:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .merchandise-store-box {
+    position: relative;
+    margin-bottom: 30px;
+    .table-unfold {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: -30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: $font-size14;
+      color: $color-brand;
+
+      .iconfont {
+        font-size: $font-size16;
+      }
+    }
+  }
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}

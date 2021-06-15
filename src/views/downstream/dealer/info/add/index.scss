@@ -1,0 +1,66 @@
+.toolbar-box > div .label {
+  width: 80px;
+}
+
+.lage {
+  /deep/ .el-upload.el-upload--picture-card {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.maxxis-add-title-btm-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+
+  .item-title {
+    padding: 0;
+  }
+}
+
+/deep/ .store-time-start .el-input__prefix {
+  margin-top: 4px;
+}
+
+/deep/ .store-info-add-item-row .el-form-item {
+  width: 10%;
+
+  .el-form-item__content {
+    width: 100%;
+  }
+}
+
+
+/deep/ .store-info-add-form {
+  .del-form .item-row .el-form-item__label {
+    display: flex;
+    justify-content: flex-start;
+    width: 96px !important;
+  }
+
+  .del-form .info-add-item-row .el-form-item__label {
+    width: 114px !important;
+  }
+
+  .info-add-address {
+    width: 600px;
+  }
+}
+/deep/.el-input.is-disabled .el-input__inner{
+  color:#777;
+ }
+/deep/.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after{
+  border-color: #777;
+}
+/deep/.el-checkbox__input.is-disabled + span.el-checkbox__label{
+  color:#777;
+}

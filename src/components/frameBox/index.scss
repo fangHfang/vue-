@@ -1,0 +1,14 @@
+.frame-box {
+  height: calc(100vh - #{$navBarHeight} - #{$tabBarHeight});
+  background-color: $color-white;
+  padding: 0;
+  overflow: auto;
+  box-sizing: border-box;
+
+  .frame-wrap {
+    min-height: 100%;
+    overflow: auto;
+    padding-bottom: $stickyFooterHeight;
+    box-sizing: border-box;
+  }
+}

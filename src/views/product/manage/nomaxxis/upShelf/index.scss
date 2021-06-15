@@ -1,0 +1,113 @@
+.toolbar-box > div .label {
+  width: 80px;
+}
+.item-title.spec{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  >span{
+    font-size:16px;
+    color:#333;
+    >b{
+      color:#ccc;
+      font-weight:400;
+      font-size:14px;
+    }
+  }
+}
+
+.table-color-rule-add{
+  color: $color-brand;
+  cursor: pointer;
+}
+.lage {
+  /deep/.el-upload.el-upload--picture-card {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+.page-content .item-title > span.normal{
+  color:#666;
+}
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.value {
+  color: $color-title-or-main;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.actionbar.bg {
+  background-color: $color-divideBlock-or-bg;
+}
+
+.supper-price {
+  width: 90%;
+  border-radius: $radius-4;
+  border: solid 1px $color-input-or-border;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+  .inline-form-item {
+    padding: 10px 0;
+  }
+}
+
+.remove-box {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn,
+.add-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .icon {
+    color: $color-brand;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+.toggle-btn {
+  margin: 0 15px;
+  font-size: $font-size14;
+  color: $color-stress;
+  cursor: pointer;
+}
+
+.mgb0 .el-form-item {
+  margin-bottom: 0;
+}
+
+.table-main {
+  margin-bottom: 20px;
+}
+
+/deep/.stock-num .el-form-item__label {
+  top: 0;
+}
+
+.look-type {
+  margin-left: 20px;
+}

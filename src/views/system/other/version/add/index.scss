@@ -1,0 +1,12 @@
+.del-form .item-row .item-textarea {
+  align-items: unset;
+  width: calc(610 / 1366 * 100vw);
+}
+
+.del-form .item-row:last-child .el-form-item {
+  width: 100%;
+}
+
+.del-form .item-button {
+  margin-left: 90px;
+}

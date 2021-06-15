@@ -1,0 +1,20 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.item-box {
+  .item-row {
+    margin-bottom: 15px;
+
+    >div {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      font-size: $font-size14;
+
+      .label {
+        width: 100px;
+        flex: 0 0 100px;
+        text-align: left;
+        margin-right: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.convert-rule-add-toolbar {
+  background: none;
+  border: none;
+}
+.toolbar-box>div .spec{
+  width:110px;
+}
+.convert-rule-add-toolbar-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+/deep/.el-input.is-disabled .el-input__inner {
+  background: none;
+  border: none;
+  color: #000;
+}
+/deep/.point .el-input__inner {
+  color: $color-brand !important;
+  font-weight: $font-weight-bold;
+}
+.toolbar-box-wrap{
+  padding:0 10px;
+}
+/deep/.convert-rule-add-table .cell {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.activity-btn-box {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  .title{
+    font-weight:600;
+  }
+  /deep/ .el-button {
+    padding: 8px 20px;
+  }
+}
+.convert-rule-add-toolbar-content {
+  background: none;
+  border: none;
+}
+.collapse-box{
+  padding:0 10px;
+  margin-bottom:10px;
+  .collapse-content,.collapse-title{
+    padding:6px 10px;
+    .active{
+      color:$color-brand;
+    }
+    div{
+      cursor: pointer;
+    }
+  }
+  /deep/.toogle-font{
+    top:13px;
+  }
+}
+
+.btn-footer {
+  padding: 15px;
+}
+.table-color-rule-add{
+  color: $color-brand;
+  cursor: pointer;
+}
+.con-con >div{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom:12px;
+  padding-left:20px;
+  .label{
+    width:90px;
+    flex:0 0 90px;
+    margin-right:10px;
+  }
+  .content{
+    flex:1;
+    .input{
+      height:32px;
+      width:70%;
+    }
+  }
+}
+.convert-rule-add-font-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: $color-brand;
+}
+
+.convert-rule-add-font-box > div:last-child {
+  font-size: $font-size12;
+}

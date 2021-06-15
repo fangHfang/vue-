@@ -1,0 +1,10 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.my-note {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 40px;
+}
+

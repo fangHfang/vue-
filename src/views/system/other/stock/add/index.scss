@@ -1,0 +1,54 @@
+
+.del-form .item-row:last-child .el-form-item {
+  width: 100%;
+}
+
+.del-form .item-button {
+  margin-left: 90px;
+}
+
+.del-form .item-row .el-input-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 10px;
+}
+.del-form .item-row .el-form-item{
+  width:32%;
+}
+.item-number {
+  display: flex;
+}
+
+.del-form .item-row .el-input-flex span {
+  margin: 0 5px;
+}
+
+.del-form .item-row {
+  align-items: center;
+}
+
+.del-form .item-row .el-input-flex i,
+.item-row-icon i {
+  font-size: 20px;
+  color: $color-fn-hover-or-checked-red;
+  margin-left: 20px;
+}
+
+.item-row-icon {
+  width: 50%;
+}
+
+.item-row-icon i {
+  font-size: 26px;
+  font-weight: $font-weight-bold;
+  margin: 0 auto;
+}
+
+.item-row-link {
+  border-bottom: 1px solid $color-ps;
+  width: 50%;
+  opacity: .3;
+  margin: 30px 0;
+}
+

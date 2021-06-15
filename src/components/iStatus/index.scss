@@ -1,0 +1,30 @@
+.i-status {
+  display: flex;
+  align-items: center;
+
+  div {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+  }
+
+  p {
+    font-size: $font-size14;
+    color: $color-title-or-main;
+  }
+
+  div.error {
+    background-color: $color-stress;
+  }
+
+  div.warning {
+    background-color: $color-disable;
+  }
+
+  div.success {
+    background-color: $color-fn-routine-or-text-green;
+  }
+}

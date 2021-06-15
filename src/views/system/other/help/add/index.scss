@@ -1,0 +1,20 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.del-form .item-row .el-form-item {
+  align-items: unset;
+  width:40%;
+  &.item-textarea{
+    width:70%;
+  }
+}
+
+.del-form .item-row:last-child .el-form-item {
+  width: 100%;
+}
+
+.del-form .item-button {
+  margin-left: 90px;
+}
+
+/deep/.editor {
+  width: 850px;
+}

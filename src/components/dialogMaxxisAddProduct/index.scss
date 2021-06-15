@@ -1,0 +1,18 @@
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.el-input-fixed {
+  width: 185px;
+
+  /deep/ .el-input__inner {
+    vertical-align: top;
+  }
+}
+.spec-dealer{
+  width:300px;
+  height:32px;
+  margin-bottom:10px;
+}

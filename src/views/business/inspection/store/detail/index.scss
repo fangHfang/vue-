@@ -1,0 +1,107 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.inspection-store-detail-toolbar {
+  background: none;
+  border: none;
+}
+
+.inspection-store-detail-toolbar > div .label {
+  width: 130px;
+}
+
+.inspection-store-detail-toolbar > div {
+  width: 18%;
+}
+
+.inspection-store-detail-toolbar .content {
+  width: 150px;
+}
+
+.i-s-d-toolbar-font-box {
+  color: $color-brand;
+  font-size: $font-size14;
+}
+
+.center-content {
+  padding: 10px;
+  width: 33%;
+}
+
+.center-content-img-box {
+  width: 100%;
+}
+
+.center-content > div:first-child {
+  padding: 15px 0;
+}
+
+.center-content-img-box > img {
+  width: 100%;
+  height: 100%;
+}
+
+.small-toolbar {
+  background: none;
+  border: none;
+  height: 50px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.small-toolbar > div {
+  width: 120px;
+}
+
+
+.center-content-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 50px;
+}
+
+.inspection-store-detail-toolbar-banner {
+  background: none;
+  border: none;
+  margin: 34px 0;
+  .score{
+    width:30%;
+    .content{
+      display: flex;
+      .el-button{
+        margin:0 0 0 10px;
+      }
+    }
+  }
+  .remarks {
+    width: 100%;
+
+    .label {
+      display: flex;
+    }
+
+    .content {
+      height: 100%;
+    }
+  }
+}
+/deep/.el-radio__input.is-disabled.is-checked{
+  .el-radio__inner{
+    background-color: #fff;
+    border-color: #ED6D00;
+  }
+  .el-radio__inner::after{
+    background-color: #ED6D00;
+  }
+}
+/deep/.el-radio__input.is-checked + .el-radio__label{
+  color: #ED6D00;
+}
+.banner-box {
+  border-top: 1px solid #F6F6F6;
+}
+
+.footer-inspection-store-detail {
+  text-align: center;
+  padding-bottom: 30px;
+}

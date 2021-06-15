@@ -1,0 +1,86 @@
+.tags-view-container {
+  height: $tabBarHeight;
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-input-or-border;
+
+  .arrow {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: $tabBarHeight;
+    z-index: 99;
+
+    &:hover {
+      background-color: #F4F4F4;
+    }
+  }
+
+  .arrow:first-of-type {
+    left: 0;
+  }
+
+  .arrow:last-of-type {
+    right: 0;
+  }
+
+  .tags-view-wrapper {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+
+    .tags-view-item {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      height: $tabBarHeight;
+      line-height: $tabBarHeight;
+      color: $color-title-or-main;
+      padding: 0 15px;
+      font-size: 14px;
+      border-radius: $radius-4 $radius-4 0 0;
+      border: 1px solid $color-input-or-border;
+      border-bottom: none;
+      box-sizing: border-box;
+      margin-right: 5px;
+
+      &.active {
+        color: $color-fn-routine-or-text-red;
+      }
+
+      &:hover {
+        background-color: $color-fn-bg-or-shallow-red;
+      }
+    }
+  }
+
+  .contextmenu {
+    margin: 0;
+    background: #FFFFFF;
+    z-index: 3000;
+    position: absolute;
+    list-style-type: none;
+    padding: 5px 0;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .3);
+
+    li {
+      margin: 0;
+      padding: 7px 16px;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-fn-bg-or-shallow-red;
+        color: $color-fn-hover-or-checked-red;
+      }
+    }
+  }
+}

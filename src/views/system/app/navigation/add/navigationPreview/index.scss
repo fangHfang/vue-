@@ -1,0 +1,39 @@
+.mall-page{
+  width:375px;
+  height:auto;
+  padding:10px;
+  background-color: #fff;
+  img{
+    width:100%;
+    border-radius:8px;
+    padding: 4px;
+  }
+  .mall-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .mall-item{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+      padding:5px;
+      width:80px;
+      height:80px;
+    }
+    span{
+      height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      padding: 0 10px;
+      text-align: center;
+      font-size:12px;
+      color:#333;
+    }
+  }
+}

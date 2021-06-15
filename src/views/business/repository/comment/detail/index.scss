@@ -1,0 +1,94 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.del-form .item-row .item-textarea {
+  align-items: unset;
+  width: calc(610 / 1366 * 100vw);
+}
+
+.del-form .item-row:last-child .el-form-item {
+  width: 100%;
+}
+
+.r-i-l-t-add-btn {
+  margin-left: 15px;
+}
+
+.r-i-l-t-add > div .label {
+  width: 110px;
+}
+
+.r-i-l-t-add-page-content {
+  padding: 0;
+}
+
+.r-i-l-t-add-page-content .page-name {
+  padding: 20px;
+}
+
+.r-i-l-t-add-page-content .table-main {
+  padding: 0 15px;
+}
+
+.info-detail-input-box {
+  width: 55%;
+  display: flex;
+
+  .el-form-item {
+    width: 50%;
+  }
+
+  /deep/.el-input .el-input__inner {
+    background: none;
+    border: none;
+    color: #000000;
+  }
+}
+
+.r-i-l-t-add-page-content .item-row {
+  padding: 0 15px 0 0;
+}
+
+/deep/.r-i-l-t-add-item-textarea .el-textarea.is-disabled .el-textarea__inner {
+  color: #000000;
+}
+
+.r-i-l-t-add-table-main {
+  margin-top: 10px;
+}
+
+.repository-comment-detail-toolbar {
+  background: none;
+  border: none;
+}
+
+.repository-comment-detail-toolbar > div .r-c-d-t-last-content {
+  height: 100%;
+}
+
+/deep/.repository-comment-detail-toolbar .el-input .el-input__inner,
+/deep/.repository-comment-detail-toolbar .el-textarea.is-disabled .el-textarea__inner {
+  border: none;
+  background: none;
+  color: #000000;
+}
+
+.repository-comment-detail-toolbar > div:last-child {
+  width: 100%;
+}
+
+.r-i-l-t-add-item-textarea {
+  color: #000000;
+  /deep/.el-form-item__content{
+    background: #f2f2f2;
+    padding:10px;
+    img{
+      max-width:70%;
+      height:auto;
+    }
+  }
+}
+/deep/.el-form-item__content >span{
+  line-height: 20px;
+  display: inline-block;
+}
+.item-textarea{
+}

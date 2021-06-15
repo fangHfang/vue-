@@ -1,0 +1,18 @@
+.mall-page{
+  width:375px;
+  height:auto;
+  padding:10px;
+  background-color: #fff;
+  img{
+    width:100%;
+    border-radius:8px;
+    padding: 4px;
+  }
+  .swiper{
+    width:calc(100% - 8px);
+    height:200px;
+    position: relative;
+    top:-70px;
+    padding:4px;
+  }
+}

@@ -1,0 +1,23 @@
+.app-main {
+  height: calc(100vh - #{$navBarHeight} - #{$tabBarHeight});
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .3s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

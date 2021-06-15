@@ -1,0 +1,460 @@
+@import "dinfont";
+@import "variables";
+@import "element-variables";
+@import "mixin";
+@import "element-ui";
+
+/* --css初始化-- */
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  color: $color-title-or-main;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Microsoft YaHei, Arial, sans-serif;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.flex-center,
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-start.align-start {
+  align-items: flex-start;
+}
+
+// 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  background-color: #FFFFFF;
+}
+
+// 定义滚动条轨道 内阴影+圆角
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  border-radius: 8px;
+  background-color: #EEEEEE;
+}
+
+// 定义滑块 内阴影+圆角
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #BBBBBB;
+}
+
+// 表单form样式调整
+.del-form {
+  color: $color-routine-or-minor;
+
+  .el-upload--picture-card,
+  .el-upload-list--picture-card .el-upload-list__item,
+  .detail-show-img img,
+  .list-show-img img {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 8px;
+  }
+  .el-input {
+    height: 32px;
+  }
+  // 避免select多选样式被影响
+  .el-select > .el-input:nth-child(2){
+    height: 100%;
+    >input{
+      min-height: 32px;
+    }
+  }
+
+  .el-form-item[ disabled = "disabled" ] .el-form-item__label {
+    color: $color-disable;
+  }
+
+  .el-form-item__label {
+    line-height: 1.6;
+    color: $color-routine-or-minor;
+    position: relative;
+    padding: 0 12px 0 0;
+    top: 9px;
+  }
+
+  .item-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .el-form-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 25%;
+    }
+
+    .el-form-item.align-start {
+      align-items: flex-start;
+    }
+
+    .el-form-item__content {
+      margin-left: 0 !important;
+      width: calc(100% - 120px);
+      margin-right: 10px;
+    }
+
+    .el-form-item__label {
+      top: 0;
+      width: 90px;
+    }
+
+    .el-form-item.form-item-upload {
+      align-items: flex-start;
+    }
+
+    .el-form-item.form-item-upload .form-label div:last-child {
+      font-size: 12px;
+      color: $color-ps;
+      padding-right: 2px;
+    }
+  }
+
+  .item-row:last-child .el-form-item {
+    margin-bottom: 0;
+  }
+
+  .font-tips {
+    color: $color-ps;
+
+    @include font-size(12);
+  }
+
+  .upload-detail .el-upload-list--picture-card .el-upload-list__item,
+  .upload-detail .el-upload--picture-card {
+    width: 100px;
+    height: 180px;
+    line-height: 180px;
+  }
+
+  .img-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .list-show-img,
+  .detail-show-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .list-show-img img,
+  .detail-show-img img {
+    border-radius: $radius-4;
+    display: block;
+  }
+
+  .detail-show-img .img-item {
+    margin-right: 10px;
+  }
+
+  .content-show-img {
+    width: 70%;
+    height: 180px;
+    border-radius: $radius-4;
+    overflow: auto;
+  }
+
+  .content-show-img img {
+    width: 100%;
+    display: block;
+  }
+
+  .inline-form-item {
+    display: flex;
+    align-items: center;
+    color: $color-title-or-main;
+
+    .inline-form-item-input {
+      width: 100px;
+      margin: 0 4px;
+    }
+  }
+}
+
+// 表格页面工具栏样式
+.toolbar-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 6px 15px 6px 0;
+  background-color: $color-divideBlock-or-bg;
+  border-bottom: solid 1px $color-input-or-border;
+
+  & > div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+
+    .label {
+      width: 90px;
+      font-size: $font-size14;
+      padding-left: 15px;
+      color: $color-routine-or-minor;
+      margin-right: 4px;
+    }
+
+    .content {
+      width: calc(100% - 90px - 4px);
+      height: 32px;
+    }
+  }
+
+  .el-button {
+    padding: 8px 20px;
+    margin: 6px 0 6px 15px;
+  }
+
+  .el-button + .el-button {
+    margin-left: 15px;
+  }
+}
+
+// 表格页面表格主体部分样式
+.table-main {
+  width: 100%;
+  padding: 0 10px;
+
+  .actionbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12px 0;
+
+    .el-button {
+      padding: 8px 20px;
+    }
+    .inline-btn-box{
+      margin-left: 15px;
+    }
+
+  }
+
+  .gray-bg-box {
+    background-color: $color-divideBlock-or-bg;
+    padding: 12px 10px;
+  }
+
+  .table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .el-table {
+      color: $color-title-or-main;
+    }
+
+    .table-pd-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+      background: $color-divideBlock-or-bg;
+    }
+
+    .table-header-item {
+      background-color: $color-menu-or-shallow;
+      color: $color-routine-or-minor;
+    }
+
+    .el-button--text {
+      color: $color-stress;
+    }
+
+    .el-button--text:hover {
+      text-decoration: underline;
+    }
+
+    .el-button.is-disabled,
+    .el-button.is-disabled:hover,
+    .el-button.is-disabled:focus {
+      color: $color-disable;
+    }
+
+    .el-table__body tr.hover-row > td,
+    .el-table__body tr:hover > td {
+      background-color: $color-fn-bg-or-shallow-red;
+    }
+
+    .el-table__body .el-checkbox__inner:hover,
+    .el-table__body .el-checkbox__input.is-focus .el-checkbox__inner {
+      border-color: $color-stress;
+    }
+
+    .el-table__body .el-checkbox__input.is-checked .el-checkbox__inner {
+      border-color: $color-stress;
+      background-color: $color-stress;
+    }
+
+    .tl-input-box {
+      width: 100px;
+      height: 34px;
+    }
+  }
+
+  .pagination {
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .btn {
+      font-size: $font-size14;
+      color: $color-stress;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 2px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  }
+}
+
+.permission_toggleFold.iconfont {
+  color: $color-brand;
+}
+
+.page-content {
+  padding: 15px;
+
+  .page-name {
+    @include font-size(18);
+    color: $color-title-or-main;
+    padding-bottom: 15px;
+  }
+
+  .item-title {
+    @include font-size(16);
+    color: $color-title-or-main;
+    padding-bottom: 15px;
+    position: relative;
+
+    > span {
+      font-size: 12px;
+      color: $color-stress;
+    }
+  }
+
+  .item-box {
+    padding-bottom: 20px;
+  }
+
+  .table-main {
+    padding: 0;
+  }
+}
+
+.fixed-btn-box {
+  position: absolute;
+  bottom: 0;
+  left: 370px;
+  z-index: 10;
+  background: rgba(255, 255, 255, .8);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.tips-light {
+  color: $color-brand;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+/*---import-export-btn-box---*/
+.el-button + .inline-btn-box{
+  margin-left: 15px;
+}
+.inline-btn-box + .el-button{
+  margin-left: 15px;
+}

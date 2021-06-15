@@ -1,0 +1,71 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.role-add {
+  // width: 80%;
+  position: relative;
+  padding: 10px 0 0 10px;
+}
+
+.role-add-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.role-font {
+  text-align: right;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.el-input,
+.el-select {
+  height: 24px;
+}
+
+.input-cont {
+  display: flex;
+  align-items: center;
+}
+
+.input-cont-three {
+  margin-left: -14px;
+}
+
+.role-add-center {
+  margin: 30px 0 10px;
+  font-size: 14px;
+}
+
+.role-add-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  padding: 0 10px 0 0;
+}
+
+.role-add-checkbox {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.select i {
+  color: $color-fn-routine-or-text-red;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.select-font {
+  font-size: 14px;
+  font-weight: $font-weight-bold;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.role-add-expla {
+  text-align: center;
+  margin: 40px 0 60px;
+}
+
+.role-add-bottom-list {
+  width: calc(100% / 4);
+}

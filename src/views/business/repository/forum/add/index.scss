@@ -1,0 +1,35 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.del-form .item-row .item-textarea {
+  align-items: unset;
+  width: 100%;
+  min-width:800px;
+}
+
+.del-form .item-row:last-child .el-form-item {
+  width: 100%;
+}
+
+.r-i-l-t-add-btn {
+  margin-left: 15px;
+}
+
+.r-i-l-t-add > div .label {
+  width: 110px;
+}
+
+.r-i-l-t-add-page-content {
+  padding: 0;
+}
+
+.r-i-l-t-add-page-content .page-name {
+  padding: 20px;
+}
+
+.r-i-l-t-add-page-content .table-main {
+  padding: 0 15px;
+}
+.comment-check{
+   /deep/.el-checkbox__inner{
+     border-radius:50%;
+   }
+ }

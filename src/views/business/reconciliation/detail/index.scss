@@ -1,0 +1,28 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+
+.repository-info-list-toolbar .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none !important;
+}
+.actionbar.spec{
+  justify-content: space-between;
+  .left-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    >div{
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right:30px;
+      font-size:14px;
+      line-height: 21px;
+      .label{
+        width:90px;
+        font-weight:600;
+        text-align: right;
+      }
+    }
+  }
+}

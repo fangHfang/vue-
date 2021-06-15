@@ -1,0 +1,25 @@
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.el-input-fixed {
+  width: 185px;
+
+  /deep/ .el-input__inner {
+    vertical-align: top;
+  }
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.title:last-child {
+  margin-top: 20px;
+}
+
+/deep/.el-textarea__inner {
+  border-radius: 10px;
+}

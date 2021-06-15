@@ -1,0 +1,18 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.el-radio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red{
+  color: #CF0000;
+}
+.green{
+  color: #4ABD0C;
+}
+.fs-14{
+  font-size: 14px;
+}
+.mgr4{
+  margin-right: 4px;
+}

@@ -1,0 +1,34 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.toolbar-box > div .label {
+  width: 80px;
+}
+
+.lage {
+  /deep/.el-upload.el-upload--picture-card {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.reset-btn {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+}
+
+.el-dialog__wrapper /deep/ .el-dialog .el-dialog__body {
+  border-top: 1px solid $color-divideLine;
+  border-bottom: 1px solid $color-divideLine;
+}
+.item-title.has-right-button{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}

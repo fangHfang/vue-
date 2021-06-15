@@ -1,0 +1,29 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.gou {
+  color: $color-fn-routine-or-text-green;
+}
+
+.form-span {
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  width: 100%;
+}
+
+.form-span > span {
+  color: $color-brand;
+  border-bottom: 1px solid $color-brand;
+  cursor: pointer;
+}
+
+.img-load .el-upload__tip {
+  color: $color-disable;
+  margin-left: 15px;
+}
+
+.img-load .el-form-item__content > div:first-child {
+  display: flex;
+}
+.disabled  /deep/ .el-upload--picture-card:nth-last-of-type(1) {
+  display: none;
+}

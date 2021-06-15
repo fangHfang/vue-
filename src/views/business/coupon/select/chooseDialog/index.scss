@@ -1,0 +1,40 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.dialog-set-list-toolbar .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none !important;
+}
+
+.dialog-choose-box .dialog-set-list-toolbar > div {
+  width: 285px;
+}
+
+.dialog-set-list-toolbar > div .label {
+  padding-left: 0;
+  text-align: center;
+}
+
+.dialog .el-button--primary {
+  background: none !important;
+  color: $color-brand;
+  border: none;
+}
+
+.choose-btn-box .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none !important;
+}
+
+.choose-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-divideLine;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.dialog-toolbar {
+  padding: 0 20px;
+}

@@ -1,0 +1,75 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.toolbar-box > div .label {
+  width: 80px;
+}
+
+.lage {
+  /deep/.el-upload.el-upload--picture-card {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.reset-btn {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+}
+
+.el-dialog__wrapper /deep/ .el-dialog .el-dialog__body {
+  border-top: 1px solid $color-divideLine;
+  border-bottom: 1px solid $color-divideLine;
+}
+
+.page-name{
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+  .el-button + .el-button{
+    margin-left:-1px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .el-button{
+    &.first{
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      margin-left:20px;
+    }
+    &.active{
+      background-color: #fff;
+      border-color: #ED6D00;
+      color:#ED6D00;
+      position:relative;
+      z-index:1;
+    }
+  }
+}
+.location-row .el-form-item:nth-last-of-type(1){
+  width: 35%;
+  .el-form-item__content{
+    width: 100%;
+  }
+}
+.content-col{
+  display: flex;
+  margin-left: 20px;
+  .label{
+    width: 60px;
+  }
+  /deep/ .el-input__inner{
+    border: none;
+  }
+}
+.location-item{
+  /deep/ .el-form-item__content{
+    width: 100%;
+  }
+}

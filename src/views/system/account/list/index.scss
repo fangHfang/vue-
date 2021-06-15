@@ -1,0 +1,19 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.account-toolbar-box .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none !important;
+}
+
+.account-toolbar-box > div {
+  width: 330px;
+}
+
+.account-toolbar-box > div .label {
+  width: 80px;
+}
+
+.table-name-color {
+  color: $color-brand;
+  cursor: pointer;
+}

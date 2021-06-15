@@ -1,0 +1,12 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.divFlex {
+  display: flex;
+}
+
+.list-toolbar-box > div {
+  width: 400px;
+}
+
+.list-toolbar-box > div > div:first-child {
+  width: 80px;
+}

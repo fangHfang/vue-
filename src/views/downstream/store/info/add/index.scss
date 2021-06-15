@@ -1,0 +1,177 @@
+.toolbar-box > div .label {
+  width: 80px;
+}
+
+.lage {
+  /deep/ .el-upload.el-upload--picture-card {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.maxxis-add-title-btm-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+
+  .item-title {
+    padding: 0;
+  }
+}
+
+/deep/ .store-time-start .el-input__prefix {
+  margin-top: 4px;
+}
+
+/deep/ .store-info-add-item-row .el-form-item {
+  width: 10%;
+
+  .upload-wrap {
+    justify-content: flex-start;
+
+    .banner-uploader {
+      margin-right: 20px;
+
+      ::v-deep.el-upload {
+        border: 1px dashed $color-input-or-border;
+        border-radius: $radius-4;
+        cursor: pointer;
+        position: relative;
+        width: 160px;
+        height: 80px;
+        line-height: 80px;
+
+        &:hover {
+          border-color: $color-fn-hover-or-checked-red;
+        }
+
+        .uploader-icon {
+          font-size: 28px;
+          color: $color-ps;
+          text-align: center;
+        }
+
+        .img {
+          width: 100%;
+          height: 100%;
+          vertical-align: top;
+        }
+
+        .el-icon-error {
+          position: absolute;
+          top: -10px;
+          right: -8px;
+          font-size: 18px;
+          color: $color-routine-or-minor;
+          background: $color-white;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .banner-link {
+      flex: 1;
+      color: $color-ps;
+    }
+  }
+
+
+  .el-form-item__content {
+    width: 100%;
+  }
+}
+
+
+/deep/ .store-info-add-form {
+  .del-form .item-row .el-form-item__label {
+    display: flex;
+    justify-content: flex-start;
+    width: 96px !important;
+  }
+
+  .info-add-address {
+    width: 600px;
+  }
+}
+
+/deep/ .store-info-add-item-row-first {
+  width: calc(10% + 165px) !important;
+}
+
+/deep/.store-info-add-form .del-form .store-info-add-item-row-first .el-form-item__label {
+  flex: 0 0 96px !important;
+}
+
+/deep/.store-info-add-upload .el-upload--picture-card {
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+}
+
+/deep/.store-info-add-form-item-last {
+  align-items: flex-start !important;
+  width: 100% !important;
+  .el-form-item__label {
+    margin-top: 8px;
+  }
+
+  .el-icon-circle-plus-outline {
+    font-size: $font-size20;
+    color: $color-brand;
+    cursor: pointer;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/deep/.store-info-add-form-item-last-input {
+  width: 150px !important;
+  /deep/.el-form-item__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    .el-icon-remove-outline {
+      font-size: $font-size20;
+      color: $color-brand;
+      cursor: pointer;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.upload-store-info-add-box {
+  display: flex;
+}
+
+.upload-store-info-add-box > div {
+  width: 30%;
+}
+.el-icon-error {
+  //position: absolute;
+  //top: -10px;
+  //right: -8px;
+  font-size: 18px;
+  color: $color-routine-or-minor;
+  //background: $color-white;
+  //border-radius: 50%;
+  
+}
+.delete{
+  width: 100%;
+  height: 100%;
+  background: $color-white;
+}

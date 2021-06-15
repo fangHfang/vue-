@@ -1,0 +1,60 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.maxxis-add-title-btm-box{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:15px;
+  .item-title{
+    margin:0;
+    height:32px;
+    line-height: 32px;
+    >span{
+      font-size:14px;
+      color:$color-brand;
+      margin-left:20px;
+      font-weight: 400;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}
+
+.del-form .item-row .el-form-item{
+  /deep/.el-form-item__label{
+    flex:0 0 120px;
+    line-height: 18px;
+  }
+  /deep/.el-form-item__content{
+    line-height: 18px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
+.img-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .img-box{
+    display:flex;
+    align-items: center;
+    .img{
+      width:50px;
+      cursor: zoom-in;
+      max-height:50px;
+    }
+    .img-right{
+      .el-radio-group{
+        display: flex;
+        flex-direction: column;
+        margin-left:5px;
+        /deep/.el-radio__label{
+          padding-left:5px;
+        }
+        .el-radio{
+          padding:2px 0;
+        }
+      }
+    }
+  }
+}

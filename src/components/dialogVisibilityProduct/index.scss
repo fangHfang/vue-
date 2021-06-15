@@ -1,0 +1,39 @@
+.item-title{
+  padding-bottom: 10px;
+}
+.tips{
+  color:#909399;
+  font-size: 12px;
+}
+.del-form .item-row .el-form-item{
+  width: 100%;
+  /deep/ .el-form-item__content>div{
+    justify-content: flex-start;
+  }
+  /deep/ .el-form-item__content{
+    line-height: normal;
+    margin-left: 20px !important;
+    .el-radio{
+      //margin-right: 10px;
+    }
+    .el-checkbox__input{
+      border-radius: 50%;
+      .el-checkbox__inner{
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.del-form .item-row:last-child .el-form-item{
+  margin-bottom: 22px;
+}
+.item-btn{
+  padding: 10px 20px 0;
+  border-radius: 4px;
+  height: 36px;
+  border: 1px solid #ED6D00;
+  margin-right: 10px;
+}
+.del-form .item-row /deep/ .el-form-item__content{
+  width: 100%;
+}

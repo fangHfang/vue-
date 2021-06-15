@@ -1,0 +1,12 @@
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  font-size: 22px;
+  color: #FFFFFF;
+  transform: rotate(180deg);
+}
+
+.hamburger.is-active {
+  transform: rotate(0deg);
+}

@@ -1,0 +1,95 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.activity-toolbar-box .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+}
+
+.activity-toolbar-box > div {
+  width: 330px;
+}
+
+.activity-toolbar-box {
+  background: none;
+  border: none;
+  padding: 10px 0;
+}
+
+.activity-toolbar-box > div:last-child > div:first-child {
+  display: flex;
+}
+
+.activity-btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.activity-btn-box > div:first-child {
+  font-size: $font-size16;
+}
+
+.btn-box {
+  padding: 0 10px;
+}
+
+.btn-box .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.detail-toolbar > div .label {
+  width: 80px;
+}
+
+.activity-detail-toolbar-box .el-button--default.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+}
+
+.activity-detail-toolbar-box > div .label {
+  width: 110px;
+}
+
+.table-top-font {
+  color: $color-brand;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.table-top-font > div {
+  cursor: pointer;
+  font-size: $font-size14;
+}
+
+.table-top-font > div > div {
+  margin-left: 6px;
+  margin-bottom: 2px;
+}
+
+.detail-toolbar .content .content-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.detail-toolbar .content .content-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.detail-toolbar > div:last-child {
+  width: 100%;
+}

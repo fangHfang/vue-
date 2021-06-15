@@ -1,0 +1,56 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.page-container {
+  height: 100%;
+}
+
+.toolbar-box {
+  > div .label {
+    width: 105px;
+  }
+}
+
+.table-main {
+  padding: 10px 10px 0;
+  height: calc(100% - 111px);
+
+  .a-map {
+    width: 100%;
+    height: 100%;
+
+    ::v-deep .amap-info-contentContainer {
+      .amap-info-sharp {
+        display: none;
+      }
+
+      .amap-info-content {
+        border: 2px solid $color-stress;
+        background: #F59546;
+        min-width: 200px;
+        border-radius: 10px;
+        padding: 20px;
+
+        .amap-info-close {
+          color: $color-white;
+        }
+
+        .content-window-card {
+          .info-p {
+            color: $color-white;
+            font-size: $font-size16;
+            line-height: $line-height36;
+
+            a {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    ::v-deep .amap-logo,
+    ::v-deep .amap-copyright {
+      opacity: 0;
+    }
+  }
+}

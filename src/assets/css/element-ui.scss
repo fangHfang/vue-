@@ -1,0 +1,280 @@
+@import "variables";
+// 覆盖一些element-ui样式
+.el-message-box__status.el-icon-warning {
+  color: $color-brand;
+}
+
+// dropdown
+.el-dropdown-menu.el-popper {
+  .el-dropdown-menu__item {
+    padding: 0 15px;
+
+    &:focus,
+    &:not(.is-disabled):hover {
+      background: $color-fn-bg-or-shallow-red;
+      color: $color-fn-hover-or-checked-red;
+    }
+  }
+}
+
+.el-input {
+  height: 100%;
+
+  .el-input__inner {
+    height: 100%;
+  }
+}
+
+.el-range-editor.el-input__inner {
+  height: 100%;
+  width: 100%;
+}
+
+.el-date-editor .el-range-separator,
+.el-date-editor .el-range__icon,
+.el-date-editor .el-range__close-icon,
+.el-input__icon {
+  line-height: 1.8;
+}
+
+.el-select {
+  width: 100%;
+  height: 100%;
+
+  .el-input__icon {
+    line-height: normal;
+    position: relative;
+    top: -1px;
+  }
+}
+
+.el-cascader {
+  width: 100%;
+  height: 100%;
+}
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 100%;
+  height: 100%;
+}
+
+.el-icon-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.el-button {
+  padding: 8px 20px;
+}
+
+.el-button--text {
+  padding: 0;
+}
+
+.el-button + .el-button {
+  margin-left: 15px;
+}
+
+.el-button--default {
+  background-color: $color-menu-or-shallow;
+}
+
+.el-button--primary {
+  background-color: $color-stress;
+  border-color: $color-stress;
+}
+
+.el-table th.el-table-column--selection > .cell {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.el-pagination.is-background {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .el-pagination__total,
+  .el-pagination__jump,
+  .el-input__inner,
+  .btn-next,
+  .btn-prev,
+  .el-pager li {
+    color: $color-routine-or-minor;
+    font-weight: 400;
+  }
+
+  .el-pager li,
+  .btn-next,
+  .btn-prev {
+    background-color: transparent;
+    border: solid 1px $color-input-or-border;
+    border-radius: $radius-4;
+  }
+
+  .el-pager li:not(.disabled).active {
+    background-color: $color-stress;
+    border: none;
+  }
+
+  .btn-prev:disabled,
+  .btn-next:disabled {
+    color: $color-disable;
+  }
+
+  .el-pager li:hover {
+    color: $color-stress;
+  }
+}
+
+.el-tabs__item {
+  color: $color-disable;
+}
+
+.el-tabs__nav {
+  display: flex;
+}
+
+.el-tabs--card > .el-tabs__header .el-tabs__item[ role = "tab" ] {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  border: solid 1px $color-input-or-border;
+  border-bottom: none;
+  border-top-left-radius: $radius-4;
+  border-top-right-radius: $radius-4;
+  font-weight: 400;
+}
+
+.el-tabs--card > .el-tabs__header .el-tabs__item:hover,
+.el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  border-color: $color-stress;
+}
+
+// 弹窗样式修改
+.el-dialog__header {
+  padding-bottom: 20px;
+
+  .el-dialog__title {
+    color: $color-title-or-main;
+    font-size: $font-size16;
+    font-weight: $font-weight-bold;
+  }
+
+  .el-dialog__headerbtn {
+    top: 25px;
+  }
+}
+
+.el-dialog__body {
+  padding: 20px;
+  position: relative;
+
+  .del-form::before,
+  .del-form::after,
+  .border-content::before,
+  .border-content::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color-divideLine;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .del-form::after,
+  .border-content::after {
+    bottom: 0;
+    top: initial;
+  }
+
+  .table-main {
+    padding: 0;
+  }
+}
+
+.el-dialog__footer {
+  padding: 15px;
+
+  .dialog-footer {
+    .el-button {
+      padding: 8px 20px;
+      margin-left: 15px;
+    }
+
+    .el-button + .el-button {
+      margin-left: 15px;
+    }
+  }
+}
+
+.el-message-box__title {
+  position: relative;
+  left: 34px;
+  top: 15px;
+  width: calc(100% - 34px);
+  display: block;
+}
+
+.el-message-box__header + .el-message-box__content .el-message-box__status {
+  top: -15px;
+}
+
+.el-message-box {
+  padding-bottom: 25px;
+}
+
+.el-message-box__btns {
+  padding: 5px 25px 0;
+}
+
+.el-message-box__message {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.el-date-editor .el-range-separator {
+  padding: 0;
+}
+
+.el-tabs--card > .el-tabs__header {
+  border: none;
+  margin: 0;
+  padding: 8px 0 0 10px;
+  box-sizing: border-box;
+}
+
+.el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: none;
+}
+
+.table-main .table .el-button--text:hover {
+  color: $color-fn-hover-or-checked-red;
+}
+
+.el-tag.el-tag--danger {
+  background-color: $color-fn-bg-or-shallow-red;
+  border-color: $color-fn-border-red;
+  color: $color-stress;
+}
+
+.special-message-zindex{
+  z-index:3000 !important;
+}
+.el-select__tags{
+  overflow: hidden;
+}
+.el-tooltip__popper.is-dark{
+  max-width:400px;
+}
+.disabled .el-upload--picture-card {
+  display: none;
+}
+.custom-message-index{
+  z-index:3000 !important;
+}

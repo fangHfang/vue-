@@ -1,0 +1,73 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.add-region-top {
+  border: none;
+  background: none;
+  padding: 10px 0;
+}
+
+.add-region-top > div {
+  width: 300px;
+}
+
+.add-region-top > div > div:first-child {
+  width: 90px;
+}
+
+.add-region-center-box {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.add-region-center-box > div:first-child {
+  font-weight: $font-weight-bold;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+.add-region-center {
+  border: none;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.add-region-center > div {
+  width: 100%;
+}
+
+.add-region-center > div > div {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.add-region-center > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-region-center > div > div > div:first-child {
+  width: 70px;
+}
+
+.add-region-center-box .el-button--primary.is-plain,
+.dialog-box .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+  margin: 0;
+}
+
+.dialog-box .el-button--primary.is-plain {
+  margin-left: 15px;
+}
+
+.btn-box {
+  margin-top: 30px;
+}
+
+.btn-box .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none;
+}

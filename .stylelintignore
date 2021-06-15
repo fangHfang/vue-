@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+/dist
+/src/assets/iconfont/*.css
+/src/assets/css/dinfont.scss
+/public
+
+# Editor directories and files
+.idea
+.vscode

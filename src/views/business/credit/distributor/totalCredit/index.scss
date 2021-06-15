@@ -1,0 +1,64 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.dialog-set-list-toolbar .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none !important;
+}
+
+.dialog-set-list-toolbar > div {
+  width: 100%;
+}
+
+.dialog-set-list-toolbar > div .label {
+  text-align: right;
+  margin-right: 15px;
+}
+.dialog-set-list-toolbar > div .content{
+  width: calc(100% - 90px - 15px);
+  .el-input,.el-textarea{
+    width: 90%;
+  }
+}
+
+.dialog .el-button--primary {
+  background: none !important;
+  color: $color-brand;
+  border: none;
+}
+
+.choose-btn-box .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none !important;
+}
+
+.choose-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $color-divideLine;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.dialog-toolbar {
+  padding: 0 20px;
+}
+
+.toolbar-box {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.toolbar-box > div:nth-last-of-type(1) {
+  align-items: flex-start;
+}
+.dialog-choose-box{
+  /deep/ .el-dialog__header{
+    border-bottom: 1px solid #EEEEEE;
+  }
+  /deep/ .el-dialog__footer{
+    border-top: 1px solid #EEEEEE;
+  }
+}

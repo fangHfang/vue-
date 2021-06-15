@@ -1,0 +1,12 @@
+.down-store-info-list-toolbar > div {
+  width: 20%;
+}
+
+.img-url {
+  width: 100%;
+}
+
+.img-url .image {
+  width: 100%;
+  height: 100%;
+}

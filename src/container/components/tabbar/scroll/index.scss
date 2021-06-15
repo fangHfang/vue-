@@ -1,0 +1,22 @@
+.scroll-container {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  /deep/ {
+    .el-scrollbar__bar {
+      bottom: 0;
+      display: none;
+    }
+
+    .el-scrollbar__wrap {
+      height: 49px;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+}

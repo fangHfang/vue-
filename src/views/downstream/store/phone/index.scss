@@ -1,0 +1,41 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.phone-box{
+    display: flex;
+    width: 1000px;
+    padding: 30px;
+    margin: 20px;
+    >p:nth-child(1){
+        width: auto;
+        font-size: 26px;
+        text-align: center;
+    }
+    >::v-deep .el-input{
+        font-size: 26px;
+        width: 300px;
+        margin: 0 20px;
+        .el-input__suffix{
+            top: -3px;
+        }
+    }
+    >p:nth-child(3){
+        width: auto;
+        font-size: 26px;
+        text-align: center;
+        margin-right: 20px;
+    }
+}
+.code-box{
+    display: flex;
+    width: 1000px;
+    padding: 0px 0px 0px 50px;
+    >p{
+        width: auto;
+        font-size: 26px;
+        text-align: center;
+        line-height: 26px;
+    }
+    >p:nth-child(2){
+        margin-left: 20px;
+        color: #ff0000;
+    }
+}

@@ -1,0 +1,65 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.convert-store-rule-table-main .actionbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionbar-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.actionbar-left > div {
+  display: flex;
+  align-items: center;
+  font-size: $font-size14;
+  color: $color-routine-or-minor;
+  padding: 2px 0;
+  padding-left: 32px;
+}
+
+.actionbar-left > div:first-child {
+  font-size: $font-size16;
+  color: $color-title-or-main !important;
+  font-weight: $font-weight-bold;
+  padding-left: 0;
+}
+
+.mendian {
+  margin: 5px 10px 3px 5px;
+  color: $color-disable !important;
+}
+
+.actionbar-left > div > div:first-child {
+  margin-right: 10px;
+  color: $color-routine-or-minor;
+}
+
+.one-font {
+  color: $color-brand;
+  border: 1px solid $color-brand;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDECE5;
+  margin: 0 5px;
+}
+
+.actionbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.actionbar-right > div:nth-child(1) {
+  font-size: $font-size16;
+  color: $color-routine-or-minor;
+  margin-right: 10px;
+}
+
+.actionbar-right > div:nth-child(2) {
+  color: $color-brand;
+  font-size: 30px;
+  margin-right: 20px;
+}

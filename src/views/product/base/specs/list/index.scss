@@ -1,0 +1,18 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.specifications-toolbar-box .el-button--default.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none !important;
+}
+
+.commodity-toolbar-box .el-range-editor.el-input__inner {
+  width: 100%;
+}
+
+.commodity-toolbar-box > div .label {
+  width: 90px;
+}
+
+.commodity-toolbar-box /deep/.el-button {
+  margin: 10px 0 10px 15px;
+}

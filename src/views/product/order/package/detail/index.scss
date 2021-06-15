@@ -1,0 +1,74 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+
+/deep/.package-product-detail .el-input .el-input__inner,
+/deep/.package-product-detail-center .el-input .el-input__inner {
+  border: none;
+  color: #000000;
+}
+
+/deep/.state-box .i-status div.success {
+  margin-top: 5px;
+}
+
+.package-product-detail,
+.package-product-detail-center {
+  background: none;
+  border: none;
+  padding: 10px 0;
+}
+
+.package-product-detail > div .content {
+  display: flex;
+  align-items: center;
+}
+
+.package-product-detail-center > div .label {
+  width: 122px;
+}
+
+.rows-more {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rows-more > div {
+  width: calc(200 / 1920 * 100vw);
+  align-items: flex-start;
+}
+
+.rows-more > div:first-child {
+  display: flex;
+  margin-top: 8px;
+}
+
+.reap-profit-box > div {
+  width: 20%;
+}
+
+.reap-profit-box .rows-more {
+  width: 20%;
+}
+
+.table-top-font {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-top-font > div:last-child {
+  cursor: pointer;
+  font-size: $font-size14;
+  color: $color-brand;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.rows-more-table {
+  width: 100%;
+  padding: 5px 10px;
+}

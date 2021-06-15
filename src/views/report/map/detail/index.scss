@@ -1,0 +1,19 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.collapse-box {
+  display: block;
+  padding: 0;
+
+  .collapse-title {
+    width: 100%;
+    height: 20px;
+  }
+
+  ::v-deep.toogle-font {
+    top: 0 !important;
+  }
+
+  .toolbar-box.spec {
+    padding: 0;
+    border: none;
+  }
+}

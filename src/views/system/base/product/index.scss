@@ -1,0 +1,13 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.el-table .cell.el-tooltip {
+  white-space: pre-wrap;
+}
+
+.el-input__prefix {
+  top: -4px;
+}
+
+.toolbar-box > div .label {
+  width: auto;
+  margin-right: 10px;
+}

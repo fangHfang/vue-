@@ -1,0 +1,32 @@
+.del-form .item-row .el-form-item {
+  width: 100%;
+}
+
+/deep/.del-form .item-row .radio {
+  margin-left: 22%;
+}
+
+/deep/.del-form .item-row .radio .el-input {
+  width: 86%;
+}
+
+/deep/.del-form .item-row .el-form-item__content {
+  display: flex;
+  width: 100%;
+}
+
+/deep/.del-form .item-row .el-form-item__content .integral {
+  margin-left: 5px;
+}
+
+.del-form .item-row .textarea {
+  align-items: unset;
+}
+
+/deep/.el-input__inner {
+  background-color: rgb(247, 243, 247);
+}
+
+/deep/.del-form .item-row .radio .el-input__inner {
+  background-color: unset;
+}

@@ -1,0 +1,20 @@
+.product-box {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: $font-size14;
+    color: $color-title-or-main;
+  }
+
+  span {
+    font-size: $font-size12;
+    color: $color-routine-or-minor;
+  }
+}
+.actionbar {
+  justify-content: space-between;
+}
+/deep/.cell.el-tooltip{
+  width:100% !important;
+}

@@ -1,0 +1,50 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.table-top-font {
+  color: $color-brand;
+  margin-left:auto;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.toolbar-box > div .label{
+  width:106px;
+}
+.table-top-font > div {
+  cursor: pointer;
+  font-size: $font-size14;
+}
+
+.table-top-font > div > div {
+  margin-left: 6px;
+  margin-bottom: 2px;
+}
+/deep/ .el-table__expanded-cell{
+  padding: 0;
+}
+.el-table{
+  overflow: auto;
+}
+.el-table__header-wrapper,
+.el-table__body-wrapper,
+.el-table__footer-wrapper{
+  overflow:visible;
+}
+.el-table__body-wrapper{
+  overflow-x:visible !important;
+}
+/* 这个是为了解决前面样式覆盖之后伪类带出来的竖线 */
+.el-table::after{
+  position: relative;
+}
+
+/deep/ .row-expand-unhas .el-table__expand-column{
+  pointer-events: none;
+}
+/deep/ .row-expand-unhas .el-table__expand-column .el-icon{
+  visibility:hidden;
+}
+/deep/ .el-table__header-wrapper .is-leaf{
+  color: #666666;
+  background-color: #FAFAFA;
+}

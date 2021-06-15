@@ -1,0 +1,24 @@
+
+.con-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom:10px;
+  .con-input{
+    height:32px;
+    width:300px;
+  }
+  .text{
+    display:inline-block;
+    width:100px;
+    text-align: right;
+    padding-right:10px;
+  }
+}
+.h2{
+  font-weight: 600;
+  line-height: 40px;
+}
+.tag{
+  margin:0 10px 10px 0;
+}

@@ -1,0 +1,77 @@
+// 基础颜色
+$color-brand: #ED6D00;
+$color-title-or-main: #333333;
+$color-routine-or-minor: #666666;
+$color-nav-or-mixin: #2B2C32;
+$color-ps: #999999;
+$color-disable: #CCCCCC;
+$color-input-or-border: #DDDDDD;
+$color-divideLine: #EEEEEE;
+$color-divideBlock-or-bg: #F5F5F5;
+$color-white: #FFFFFF;
+$color-menu-or-shallow: #FAFAFA;
+$color-stress: #ED6D00;
+$color-error-or-tips: #FF0000;
+$color-transparentBlack: rgba(0, 0, 0, .65);
+$color-blue: #00A2FF;
+$color-green: #5AC725;
+
+// 功能色
+$color-fn-hover-or-checked-red: #E6560E;
+$color-fn-hover-or-checked-yellow: #E6AC00;
+$color-fn-hover-or-checked-green: #47AB17;
+$color-fn-routine-or-text-red: #ED6D00;
+$color-fn-routine-or-text-yellow: #FFBA00;
+$color-fn-routine-or-text-green: #52C41A;
+$color-fn-border-red: rgba(237, 109, 0, .4);
+$color-fn-border-yellow: rgba(255, 186, 0, .4);
+$color-fn-border-green: rgba(82, 196, 26, .4);
+$color-fn-bg-or-shallow-red: rgba(237, 109, 0, .1);
+$color-fn-bg-or-shallow-yellow: rgba(255, 186, 0, .1);
+$color-fn-bg-or-shallow-green: rgba(82, 196, 26, .1);
+
+// 字体大小
+$font-size28: 28px;
+$font-size20: 20px;
+$font-size16: 16px;
+$font-size14: 14px;
+$font-size12: 12px;
+
+// 字体行高
+$line-height36: 36px;
+$line-height28: 28px;
+$line-height24: 24px;
+$line-height22: 22px;
+$line-height18: 18px;
+
+// 字重
+$font-weight-lighter: 400;
+$font-weight-bold: 600;
+
+// 投影
+$shadow-s: 0 1px 4px rgba(0, 0, 0, .08);
+$shadow-m: 0 2px 8px rgba(0, 0, 0, .08);
+$shadow-l: 0 4px 16px rgba(0, 0, 0, .1);
+
+// 圆角
+$radius-4: 4px;
+$radius-2: 2px;
+
+// 侧边栏
+$menuText:$color-ps;
+$menuActiveText:$color-fn-hover-or-checked-yellow;
+$menuBg:$color-nav-or-mixin;
+$menuHover:$color-fn-bg-or-shallow-red;
+$subMenuBg:$color-transparentBlack;
+$subMenuHover:$color-fn-bg-or-shallow-red;
+$sideBarWidth: 180px;
+
+//导航栏
+$navBarHeight:50px;
+$color-nav-hover-active:#F6811D;
+
+// 页签栏
+$tabBarHeight:34px;
+
+// sticky-footer
+$stickyFooterHeight:0;

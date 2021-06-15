@@ -1,0 +1,175 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.convert-rule-add-toolbar {
+  background: none;
+  border: none;
+}
+
+.convert-rule-add-toolbar-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/deep/.convert-rule-add-table .cell {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.convert-rule-add-toolbar-content {
+  background: none;
+  border: none;
+}
+
+/deep/.signed-step-add-upload .el-upload--picture-card {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.convert-rule-add-toolbar-content > div {
+  width: 27%;
+}
+
+.convert-rule-add-toolbar-content > div .label {
+  width: 145px;
+}
+
+.convert-rule-add-font-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: $color-brand;
+}
+
+.convert-rule-add-font-box .el-icon-circle-plus-outline {
+  margin: 0 5px;
+}
+
+.convert-rule-add-font-box > div:last-child {
+  font-size: $font-size12;
+}
+
+.convert-rule-add-toolbar-btm .btn-box {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.convert-rule-banner-box {
+  background: none;
+  border: none;
+}
+
+.btn-footer {
+  padding: 15px;
+}
+
+.btn-footer .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none;
+}
+
+/deep/.convert-rule-add-table-product .el-textarea__inner {
+  border: none;
+  text-align: center;
+}
+
+/deep/.convert-rule-add-table-product .el-table__body .el-table_2_column_10 {
+  border-right: 1px solid $color-input-or-border;
+  border-left: 1px solid $color-input-or-border;
+}
+
+/deep/.convert-rule-add-table-product .cell {
+  height: 100%;
+}
+
+/deep/.signed-step-add-toolbar .label {
+  width: 104px;
+  margin-right: 15px;
+}
+
+.signed-step-add-toolbar > div {
+  width: 10%;
+  margin: 0 10px 0 0;
+}
+
+.signed-step-add-toolbar > div {
+  width: calc(25% - 90px);
+}
+.signed-step-add-toolbar > div > .content {
+  width: 100%;
+}
+.toolbar-box {
+  padding: 0;
+  background: none;
+  border: none;
+}
+.signed-step-add-toolbar-box {
+  display: flex;
+  align-items: center;
+
+  .el-icon-remove-outline {
+    color: $color-brand;
+    font-size: 24px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.icon-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  .el-icon-circle-plus-outline {
+    color: $color-brand;
+    font-size: 24px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+.el-upload__tip{
+  color: $color-brand;
+  font-size: 6px;
+}
+.comment-check{
+  /deep/.el-checkbox__inner{
+    border-radius:50%;
+  }
+  /deep/ .el-checkbox__label{
+    color: $color-routine-or-minor;
+  }
+}
+.convert-rule-add-remarks-box {
+  padding: 15px;
+  padding-left: 0;
+  border-bottom: $color-input-or-border;
+}
+.toolbar-content{
+  width: 90px;
+  height: 100%;
+  padding: 6px 0;
+  margin-right: 4px;
+}
+.item-title{
+  font-size: $font-size16;
+  font-weight: bold;
+  padding: 12px 0;
+}
+.table-main{
+  padding: 0 15px;
+}
+.disabled  /deep/ .el-upload--picture-card {
+  display: none !important;
+}

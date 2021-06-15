@@ -1,0 +1,145 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.activity-toolbar-box .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+}
+
+.activity-toolbar-box > div {
+  width: 330px;
+}
+
+.activity-toolbar-box {
+  background: none;
+  border: none;
+  padding: 10px 0;
+}
+
+.activity-toolbar-box > div:last-child > div:first-child {
+  display: flex;
+}
+
+.activity-btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0 15px;
+}
+
+.activity-btn-box > div:first-child {
+  font-size: $font-size16;
+}
+
+.btn-box {
+  padding: 3% 15px;
+}
+
+.btn-box .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content-range {
+  width: calc((100% - 60px ) / 4);
+  margin: 0 15px 15px 0;
+}
+
+.detail-toolbar > div .label {
+  width: 80px;
+}
+
+.activity-detail-toolbar-box .el-button--default.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+}
+
+.activity-detail-toolbar-box > div .label {
+  width: 110px;
+}
+
+.table-top-font {
+  color: $color-brand;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.table-top-font > div {
+  cursor: pointer;
+  font-size: $font-size14;
+}
+
+.table-top-font > div > div {
+  margin-left: 6px;
+  margin-bottom: 2px;
+}
+
+// /deep/.el-textarea__inner {
+//   border-radius: 8px;
+// }
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin-left: 10px;
+}
+
+.button i,
+.add i {
+  font-size: $font-size20;
+  color: $color-brand;
+}
+
+.range-whole {
+  width: 50%;
+  padding: 0 0 0 15px;
+}
+
+.font {
+  margin: 10px 0 15px;
+}
+
+.font-two {
+  margin: 20px 0 15px;
+}
+
+.add {
+  text-align: center;
+}
+
+.add i {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+}
+
+.top {
+  background-color: rgb(248, 245, 246);
+  padding: 15px 0 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((600 / 1366) * 100vw);
+}
+
+.el-input {
+  height: 30px;
+}
+.detail-toolbar .el-input .el-input__inner{
+  border: none ;
+  color: #000;
+}
+.state-box .i-status div.success{
+  margin-top: 5px;
+}

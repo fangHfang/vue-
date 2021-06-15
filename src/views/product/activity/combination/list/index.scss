@@ -1,0 +1,12 @@
+.toolbar-box .reset {
+  border: 1px solid $color-stress;
+  color: $color-stress;
+}
+
+/deep/.i-status div.error {
+  background-color: $color-fn-hover-or-checked-yellow;
+}
+
+/deep/.i-status div.delete {
+  background-color: $color-error-or-tips;
+}

@@ -1,0 +1,25 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.del-form {
+  .el-form-item {
+    margin-bottom: 0;
+  }
+
+  .flex-center {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    .el-radio {
+      margin-right: 5px;
+    }
+
+    .text {
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+      font-size: $font-size14;
+    }
+  }
+}

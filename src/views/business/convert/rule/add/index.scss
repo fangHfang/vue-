@@ -1,0 +1,90 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.convert-rule-add-toolbar {
+  background: none;
+  border: none;
+}
+
+.convert-rule-add-toolbar-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/deep/.convert-rule-add-table .cell {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.convert-rule-add-toolbar-content {
+  background: none;
+  border: none;
+}
+
+/deep/.convert-rule-upload .el-upload--picture-card,
+.el-upload-list__item-thumbnail {
+  width: 150px;
+  height: 200px;
+  line-height: 200px;
+  background: none;
+}
+::v-deep .el-upload-list--picture-card>.el-upload-list__item{
+  height: 200px;
+  line-height: 200px;
+}
+
+.convert-rule-add-toolbar-content > div {
+  width: 27%;
+}
+
+.convert-rule-add-toolbar-content > div .label {
+  width: 145px;
+}
+
+.convert-rule-add-toolbar-btm .btn-box {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.convert-rule-add-remarks-box {
+  padding: 15px;
+  height: 200px;
+  border-bottom: $color-input-or-border;
+}
+
+.convert-rule-banner-box {
+  background: none;
+  border: none;
+}
+
+.btn-footer {
+  padding: 15px;
+}
+
+.btn-footer .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none;
+}
+
+/deep/.convert-rule-add-table-product .el-textarea__inner {
+  border: none;
+  text-align: center;
+}
+
+/deep/.convert-rule-add-table-product .el-table__body .el-table_2_column_10 {
+  border-right: 1px solid $color-input-or-border;
+  border-left: 1px solid $color-input-or-border;
+}
+
+/deep/.convert-rule-add-table-product .cell {
+  height: 100%;
+}
+.exchange-point-add-product{
+  justify-content: space-between;
+}
+
+::v-deep.upload-hide>.el-upload--picture-card {
+  display: none;
+}

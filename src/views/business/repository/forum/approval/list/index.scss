@@ -1,0 +1,11 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.account-toolbar-box{
+  border: none;
+  padding-bottom: 0;
+}
+
+.account-toolbar-box .el-button{
+  padding: 15px;
+  margin: 0;
+  padding-bottom: 0;
+}

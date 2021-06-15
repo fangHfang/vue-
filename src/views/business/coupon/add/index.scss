@@ -1,0 +1,57 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.item-box {
+  .item-row {
+    margin-bottom: 15px;
+    align-items: center;
+
+    >div {
+      width: unset;
+      display: flex;
+      align-items: center;
+      font-size: $font-size14;
+
+      .label {
+        width: 100px;
+        flex: 0 0 100px;
+        text-align: left;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+/deep/.del-form .el-input,
+/deep/.el-select,
+/deep/.el-range-editor.el-input__inner {
+  width: 97%;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.explain {
+  color: $color-brand;
+}
+
+/deep/.establish .el-input__inner {
+  background-color: rgb(247, 244, 244);
+}
+
+.page-content {
+  padding: unset;
+}
+
+.page-name,
+.del-form,
+.btn-box {
+  padding: 15px;
+}
+
+.link {
+  border-bottom: 1px solid;
+  margin-bottom: 3%;
+  opacity: .1;
+}

@@ -1,0 +1,29 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.toolbar-box{
+  background: #fff;
+}
+.page-content .page-name {
+  padding: 10px 0 4px;
+}
+.item-row{
+  /deep/ .el-input__inner{
+    border: none;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  /deep/ .el-form-item__content{
+    span:nth-of-type(1){
+      padding-left: 15px;
+    }
+    span:nth-of-type(2){
+      padding-left: 5px;
+    }
+  }
+}
+.item-title >span{
+  color: #ED6D00;
+  //font-size: 7px;
+  margin-left: 5px;
+  font-weight: bold;
+}

@@ -1,0 +1,20 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.el-radio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.el-radio:nth-of-type(1){
+  .content{
+    width: 100%;
+  }
+}
+.red{
+  color: #CF0000;
+}
+/deep/.i-status div.error {
+  background-color: $color-fn-hover-or-checked-yellow;
+}
+.toolbar-box > div .label{
+  width: 120px;
+}

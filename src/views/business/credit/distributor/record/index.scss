@@ -1,0 +1,23 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.down-store-info-list-toolbar > div {
+  width: 28%;
+}
+.actionbar{
+  background: #fff;
+  justify-content: flex-start;
+  /deep/ .el-input__inner{
+    border: none;
+  }
+  >div{
+    width: 16%;
+    /deep/ .el-input__prefix{
+      display: none;
+    }
+  }
+}
+.red{
+  color: #D70000;
+}
+.green{
+  color: #4ABD0C;
+}

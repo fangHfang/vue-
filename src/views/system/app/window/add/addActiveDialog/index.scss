@@ -1,0 +1,18 @@
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.el-input-fixed {
+  width: 185px;
+
+  /deep/ .el-input__inner {
+    vertical-align: top;
+  }
+}
+
+.banner-link {
+  flex: 1;
+  color: $color-ps;
+}

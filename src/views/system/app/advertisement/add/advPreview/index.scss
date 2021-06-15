@@ -1,0 +1,37 @@
+.mall-page{
+  width:375px;
+  height:auto;
+  padding:10px;
+  background-color: #fff;
+  position: relative;
+  img{
+    width:100%;
+    border-radius:8px;
+    padding: 4px;
+  }
+  .swiper-container,.adv{
+    position: absolute;
+    left:0;
+    right:0;
+    top:-20%;
+    bottom:0;
+    margin:auto;
+    z-index:10;
+    width:80%;
+    .swiper-slide{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &::after{
+    content: '';
+    width: calc(100% - 26px);
+    height: calc(100% - 26px);
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    border-radius: 6px;
+  }
+}

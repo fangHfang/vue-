@@ -1,0 +1,11 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+/deep/.i-status div.error {
+  background-color: $color-fn-routine-or-text-yellow;
+}
+
+.table-main .pagination {
+  justify-content: unset;
+}
+/deep/ .warning{
+  display: none;
+}

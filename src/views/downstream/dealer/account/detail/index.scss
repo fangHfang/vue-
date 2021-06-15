@@ -1,0 +1,59 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.account-toolbar-box .el-button--primary.is-plain {
+  color: $color-brand;
+  border-color: $color-brand;
+  background: none;
+}
+
+.account-toolbar-box > div {
+  width: 420px;
+}
+
+.account-toolbar-box {
+  background: none;
+  border: none;
+  padding: 10px 0;
+}
+
+.account-toolbar-box > div:last-child {
+  width: calc(420px * 5);
+  height: 60px;
+}
+
+.account-toolbar-box > div:last-child > div:first-child {
+  display: flex;
+}
+
+.account-btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.account-btn-box > div:first-child {
+  font-size: $font-size16;
+}
+
+.btn-box {
+  margin-top: 30px;
+}
+
+.btn-box .el-button--primary.is-plain {
+  color: $color-routine-or-minor;
+  border-color: $color-input-or-border;
+  background: none;
+}
+
+.detail-toolbar > div > div {
+  color: #000000;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.detail-toolbar > div .label {
+  width: 80px;
+}

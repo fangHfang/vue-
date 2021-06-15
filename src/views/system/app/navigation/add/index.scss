@@ -1,0 +1,149 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.window-container {
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: $stickyFooterHeight;
+
+  .card-left {
+    flex: 0 0 380px;
+    height: 100%;
+    border-right: 1px solid $color-divideLine;
+
+    .img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  }
+
+  .card-right {
+    flex: 0 0 calc(100% - 380px);
+    height: 100%;
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding-bottom: 60px;
+
+    .card-title {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .card-block-wrap {
+      .card-block {
+        margin-top: 50px;
+        position: relative;
+      }
+
+      .window-form {
+        padding: 15px;
+
+        .el-input {
+          height: 32px;
+          max-width: 400px;
+        }
+
+        .el-radio {
+          margin-bottom: 5px;
+        }
+      }
+
+      .card-block:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.link-box {
+  background: $color-divideBlock-or-bg;
+  padding: 20px 15px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+
+  /deep/.el-icon-remove-outline {
+    color: $color-brand;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-fn-hover-or-checked-red;
+    }
+  }
+}
+
+/deep/.el-icon-circle-plus-outline {
+  color: $color-brand;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 80px;
+  font-size: 24px;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-fn-hover-or-checked-red;
+  }
+}
+.banner-uploader {
+  margin-right: 20px;
+
+  ::v-deep.el-upload {
+    border: 1px dashed $color-input-or-border;
+    border-radius: $radius-4;
+    cursor: pointer;
+    position: relative;
+    width: 160px;
+    height: 80px;
+    line-height: 80px;
+
+    &:hover {
+      border-color: $color-fn-hover-or-checked-red;
+    }
+
+    .uploader-icon {
+      font-size: 28px;
+      color: $color-ps;
+      text-align: center;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+
+    .el-icon-error {
+      position: absolute;
+      top: -10px;
+      right: -8px;
+      font-size: 18px;
+      color: $color-routine-or-minor;
+      background: $color-white;
+      border-radius: 50%;
+    }
+  }
+}
+.sort-box{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .sort{
+    margin:20px 10px 0 0;
+    padding:2px;
+    &+.sort{
+      margin-top:10px;
+    }
+  }
+}

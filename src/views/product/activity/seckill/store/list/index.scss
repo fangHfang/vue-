@@ -1,0 +1,110 @@
+// 如需覆盖公共也是，可自行添加其他类，然后该文件内编写样式
+.item-title{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  >span{
+    font-size:16px;
+    color:#333;
+    >b{
+      color:#ccc;
+      font-weight:400;
+      font-size:14px;
+    }
+  }
+}
+.circle{
+  margin-left:15px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size:14px;
+  i{
+    width:16px;
+    height:16px;
+    display:inline-block;
+    border-radius: 50%;
+    border:1px solid #ddd;
+    position:relative;
+    top:3px;
+    margin-right:4px;
+    box-sizing: border-box;
+  }
+  &.checked i{
+    border-color:$color-brand;
+    &::after{
+      position:absolute;
+      content:'';
+      width:8px;
+      height:8px;
+      top:3px;
+      left:3px;
+      border-radius: 50%;
+      background: $color-brand;
+    }
+  }
+}
+.visible-box{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:15px;
+  .border-box{
+    border:1px solid #ddd;
+    border-radius:$radius-4;
+    flex:1;
+    padding:10px;
+    >p{
+      font-size:16px;
+      color:#333;
+      line-height: 30px;
+    }
+    .p{
+      font-size:14px;
+      display:flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      >span{
+        display:inline-block;
+        width:16.66%;
+      }
+    }
+  }
+  .el-icon-remove-outline{
+    padding:20px;
+    font-size:24px;
+    color:$color-brand;
+    cursor: pointer;
+    margin-left:10px;
+  }
+}
+.switch-visible{
+  margin-left:20px;
+  /deep/.el-switch__core{
+    margin:0 5px;
+  }
+}
+.con-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom:10px;
+  padding:10px;
+  background: #F5F5F5;
+  .con-input{
+    height:32px;
+    width:300px;
+  }
+  .text{
+    display:inline-block;
+    text-align: right;
+    padding-right:10px;
+  }
+}
+.h2{
+  font-weight: 600;
+  line-height: 40px;
+}
+.tag{
+  margin:0 10px 10px 0;
+}

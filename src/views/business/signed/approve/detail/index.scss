@@ -1,0 +1,163 @@
+.toolbar-box > div .label {
+  width: 80px;
+  padding-left: 0;
+}
+.toolbar-box{
+  padding: 0;
+  background: none;
+  border: none;
+  padding-bottom: 20px;
+}
+.lage {
+  /deep/ .el-upload.el-upload--picture-card {
+    width: 194px;
+    height: 100px;
+    line-height: 100px;
+  }
+}
+
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.maxxis-add-title-btm-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+
+  .item-title {
+    padding: 0;
+  }
+}
+
+/deep/ .store-time-start .el-input__prefix {
+  margin-top: 4px;
+}
+
+/deep/ .store-info-add-item-row .el-form-item {
+  width: 10%;
+
+  .el-form-item__content {
+    width: 100%;
+  }
+}
+
+
+/deep/ .store-info-add-form {
+  .del-form .item-row .el-form-item__label {
+    display: flex;
+    justify-content: flex-start;
+    width: 96px !important;
+  }
+
+  .info-add-address {
+    width: 600px;
+  }
+  p{
+    height: 40px;
+  }
+}
+
+/deep/ .store-info-add-item-row-first {
+  width: calc(10% + 165px) !important;
+}
+
+/deep/.store-info-add-form .del-form .store-info-add-item-row-first .el-form-item__label {
+  width: 135px !important;
+}
+
+/deep/.store-info-add-upload .el-upload--picture-card {
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+}
+
+/deep/.store-info-add-form-item-last {
+  align-items: flex-start !important;
+  width: 100% !important;
+  .el-form-item__label {
+    margin-top: 8px;
+  }
+}
+
+/deep/.store-info-add-form-item-last-input {
+  width: 150px !important;
+  /deep/.el-form-item__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    .el-icon-remove-outline {
+      font-size: $font-size20;
+      color: $color-brand;
+      cursor: pointer;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.upload-store-info-add-box {
+  display: flex;
+}
+
+.upload-store-info-add-box > div {
+  width: 30%;
+}
+.detail-toolbar{
+  /deep/ .el-input__inner{
+    border:none;
+  }
+}
+.el-icon-circle-plus-outline {
+  font-size: $font-size20;
+  color: $color-brand;
+  cursor: pointer;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.el-upload__tip{
+  width: 130px;
+  color: $color-brand;
+  font-size: 6px;
+  text-align: center;
+}
+.el-form-item{
+  width: 100%;
+  //flex-direction: column;
+}
+.signed-step-add-upload{
+  display: flex;
+}
+/deep/ .el-upload-list--picture-card{
+  display: flex;
+}
+/deep/ .store-info-add-upload .el-form-item__content {
+  display: flex;
+}
+.comment-check{
+  /deep/.el-checkbox__inner{
+    border-radius:50%;
+  }
+  /deep/ .el-checkbox__label{
+    color: $color-routine-or-minor;
+  }
+}
+.dia-content{
+  width: 100%;
+}
+::v-deep .el-upload--picture-card{
+  display:none;
+}
+.approvalStatus-box{
+  /deep/ .el-input__inner{
+    border:none;
+  }
+}

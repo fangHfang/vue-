@@ -1,0 +1,27 @@
+.product-box {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: $font-size14;
+    color: $color-title-or-main;
+  }
+
+  span {
+    font-size: $font-size12;
+    color: $color-routine-or-minor;
+  }
+}
+/deep/ .el-table__body-wrapper{
+  max-height: calc(100vh - 50px - 34px - 145px - 56px - 48px - 62px);
+  overflow-y: auto;
+}
+.temp-box{
+  >span{
+    width:100%;
+    display:inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

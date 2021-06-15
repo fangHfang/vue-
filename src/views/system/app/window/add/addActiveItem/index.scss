@@ -1,0 +1,36 @@
+.tips {
+  color: $color-ps;
+  font-size: $font-size12;
+  padding: 0 10px;
+}
+
+.el-input-fixed {
+  width: 185px;
+
+  /deep/ .el-input__inner {
+    vertical-align: top;
+  }
+}
+
+.banner-link {
+  flex: 1;
+  color: $color-ps;
+}
+.upload-wrap{
+  /deep/.el-form-item__content{
+    width:100%;
+  }
+}
+.sort-box{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .sort{
+    margin:30px 10px 0;
+    padding:2px;
+    &+.sort{
+      margin-top:10px;
+    }
+  }
+}

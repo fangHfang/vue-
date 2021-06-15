@@ -1,0 +1,22 @@
+.collapse-box {
+  position: relative;
+  width: 100%;
+
+  .toogle-font {
+    color: $color-brand;
+    font-size: $font-size14;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-fn-hover-or-checked-red;
+    }
+
+    em {
+      margin-left: 10px;
+      font-weight: $font-weight-lighter;
+    }
+  }
+}
